@@ -1,0 +1,84 @@
+* {
+  font-family: Arial;
+}
+
+header {
+  font-family: Arial;
+  background-color: #b3d0ff;
+  border-color: white;
+  color: black;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 20px;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  padding: 150px;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25rem 25rem;
+    grid-template-areas:
+      "one one one two two two"
+      "three three four four five five"
+  }
+
+.img1 {
+  height: 100%;
+  width: 100%;
+}
+
+.one {
+  font-family: Arial;
+  background-color: #67a1ff;
+  color: white;
+  border-style: solid;
+  grid-area: one;
+}
+
+.two {
+  border-color: white;
+  border-style: solid;
+  color: black;
+  grid-area: two;
+}
+
+.three {
+  padding: 20px;
+  background-color: #b3d0ff;
+  border-color: white;
+  border-style: solid;
+  color: black;
+  grid-area: three;
+}
+
+.img2 {
+  height: 100%;
+  width: 100%;
+}
+
+.four {
+  grid-area: four;
+  border-color: white;
+  border-style: solid;
+}
+
+.textwrap {
+  width: 187px;
+  height: 250px;
+  float: right;
+  padding: 10px;
+}
+
+.five {
+  padding: 20px;
+  background-color: #b3d0ff;
+  border-color: white;
+  border-style: solid;
+  color: black;
+  grid-area: five;
+}
