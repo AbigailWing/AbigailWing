@@ -1,6 +1,8 @@
+/* Global styles */
 html, body {
     height: 100%;
     margin: 0; /* Remove any default margin */
+    font-size: 16px; /* Base font size */
 }
 
 body {
@@ -11,12 +13,14 @@ body {
     background-attachment: fixed; /* Optional: Makes the background fixed as you scroll */
 }
 
+/* Header styles */
 header {
     background: #007acc;
     color: #fff;
     padding: 1rem 0;
 }
 
+/* Navigation bar styles */
 .nav-bar {
     list-style: none;
     display: flex;
@@ -30,7 +34,7 @@ header {
 }
 
 .nav-bar a {
-    text-decoration: none;  /* No underline by default */
+    text-decoration: none; /* No underline by default */
     color: #fff;
     font-weight: bold;
     transition: color 0.3s ease; /* Smooth transition for color change */
@@ -38,10 +42,11 @@ header {
 
 /* Darken the text color on hover */
 .nav-bar a:hover {
-    text-decoration: none;  /* No underline on hover */
+    text-decoration: none; /* No underline on hover */
     color: #005b8a; /* Darkened shade of the navbar color */
 }
 
+/* Main content styles */
 main {
     padding: 2rem;
     max-width: 800px;
@@ -65,6 +70,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Image styles */
 img {
     max-width: 100%;
     height: auto;
@@ -73,6 +79,7 @@ img {
     border: 3px solid #007acc; /* Border matches navbar color */
 }
 
+/* Resume section styles */
 .resume h2 {
     color: #007acc;
     margin-top: 2rem;
@@ -94,7 +101,7 @@ img {
     margin-bottom: 0.5rem;
 }
 
-/* Style for profile image on index page */
+/* Profile picture styles */
 .profile-pic {
     float: right; /* Floats the image to the right of the content */
     max-width: 150px; /* Keeps the image at a manageable size */
@@ -187,16 +194,15 @@ img {
     text-decoration: none;             /* Ensure no underline when hovering */
 }
 
-/* Optional: Hover effect for text color */
 .tile:hover h3 {
     color: #ffffff;                    /* Change text color on hover */
 }
 
-/* Optional: Add a smooth transition on text color change */
 .tile h3 {
     transition: color 0.3s ease;
 }
 
+/* Responsive video styles */
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
@@ -204,13 +210,63 @@ img {
     overflow: hidden;
     max-width: 100%;
     background: #000; /* Optional: adds a background color */
-  }
+}
 
-  .video-container iframe {
+.video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border: none; /* Removes any additional border styles */
-  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 0.9rem;
+    }
+
+    .nav-bar li {
+        margin: 0 0.5rem;
+    }
+
+    .nav-bar a {
+        font-size: 0.8rem;
+    }
+
+    main {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 0.8rem;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar li {
+        margin: 0.5rem 0;
+    }
+
+    .nav-bar a {
+        font-size: 0.7rem;
+    }
+
+    main {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+}
