@@ -179,7 +179,7 @@ img {
     background-color: #007acc;
     color: white;
     text-align: center;
-    font-size: 16px;                   /* Slightly smaller text */
+    font-size: 16px;                   /* Default text size */
     text-decoration: none;             /* Removes the underline from the link */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -187,19 +187,28 @@ img {
     transition: all 0.3s ease;
 }
 
-/* Hover effect for tiles */
 .tile:hover {
     transform: scale(1.1);             /* Slightly enlarge the tile */
     opacity: 0.9;                      /* Fade effect */
     text-decoration: none;             /* Ensure no underline when hovering */
 }
 
-.tile:hover h3 {
-    color: #ffffff;                    /* Change text color on hover */
-}
-
 .tile h3 {
     transition: color 0.3s ease;
+    font-size: inherit;                /* Inherits tile's font size */
+}
+
+/* Responsive styles for tile text */
+@media screen and (max-width: 768px) {
+    .tile {
+        font-size: 14px;               /* Smaller text for tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tile {
+        font-size: 12px;               /* Even smaller text for mobile phones */
+    }
 }
 
 /* Responsive video styles */
@@ -221,7 +230,7 @@ img {
     border: none; /* Removes any additional border styles */
 }
 
-/* Responsive styles */
+/* Responsive styles for navigation and content */
 @media screen and (max-width: 768px) {
     header {
         font-size: 0.9rem;
