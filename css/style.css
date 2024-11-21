@@ -1,0 +1,198 @@
+html, body {
+    height: 100%;
+    margin: 0; /* Remove any default margin */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to bottom, #b3d9ff, #ffffff); /* Light blue to white gradient */
+    background-attachment: fixed; /* Optional: Makes the background fixed as you scroll */
+}
+
+header {
+    background: #007acc;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.nav-bar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li {
+    margin: 0 1rem;
+}
+
+.nav-bar a {
+    text-decoration: none;  /* No underline by default */
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Darken the text color on hover */
+.nav-bar a:hover {
+    text-decoration: none;  /* No underline on hover */
+    color: #005b8a; /* Darkened shade of the navbar color */
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+
+    /* Apply fade-in animation */
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+h1 {
+    color: #007acc;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: 3px solid #007acc; /* Border matches navbar color */
+}
+
+.resume h2 {
+    color: #007acc;
+    margin-top: 2rem;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 0.5rem;
+}
+
+.resume h3 {
+    color: #333;
+    margin-top: 1.5rem;
+}
+
+.resume ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+.resume ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Style for profile image on index page */
+.profile-pic {
+    float: right; /* Floats the image to the right of the content */
+    max-width: 150px; /* Keeps the image at a manageable size */
+    height: auto; /* Maintains the aspect ratio */
+    margin-left: 1rem; /* Adds spacing between the image and the text on the left */
+    margin-bottom: 1rem; /* Adds spacing between the image and the text below */
+    margin-top: 0; /* No spacing at the top */
+    border: 2px solid #007acc; /* Adds a border with the same color as the navbar */
+    border-radius: 0; /* Sharp corners for the border */
+}
+
+/* Padding and box styles */
+.padding {
+    padding: 20px;
+}
+
+.box {
+    display: flex; /* Align the image and text side by side */
+    flex-wrap: wrap; /* Allow content to wrap in smaller screens */
+    gap: 20px; /* Add space between the image and text */
+    justify-content: center;
+}
+
+.sub-box {
+    flex: 1;
+}
+
+.sub-box img {
+    max-width: 100%; /* Ensure image does not overflow */
+    height: auto; /* Maintain image aspect ratio */
+}
+
+.about {
+    max-width: 600px; /* Limit text width for readability */
+    font-size: 1rem;
+}
+
+.abouth3 {
+    font-size: 1.5rem;
+    color: #007acc; /* Match the navbar color for consistency */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the fade-in effect */
+.fade-in {
+    animation: fadeIn 0.25s ease-in-out; /* Makes the fade-in faster (0.5s duration) */
+}
+
+/* Container for the tiles */
+.tile-container {
+    display: flex;                     /* Use flexbox to display tiles horizontally */
+    justify-content: flex-start;       /* Align tiles to the left */
+    gap: 20px;                         /* Adds space between each tile */
+    padding: 20px;
+    flex-wrap: nowrap;                 /* Prevent tiles from wrapping to the next row */
+}
+
+/* Style for each tile */
+.tile {
+    position: relative;
+    display: flex;
+    justify-content: center;           /* Horizontally centers the text inside the tile */
+    align-items: center;               /* Vertically centers the text inside the tile */
+    width: 250px;                      /* Tile width */
+    height: 180px;                     /* Tile height */
+    background-color: #007acc;
+    color: white;
+    text-align: center;
+    font-size: 16px;                   /* Slightly smaller text */
+    text-decoration: none;             /* Removes the underline from the link */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for tiles */
+.tile:hover {
+    transform: scale(1.1);             /* Slightly enlarge the tile */
+    opacity: 0.9;                      /* Fade effect */
+    text-decoration: none;             /* Ensure no underline when hovering */
+}
+
+/* Optional: Hover effect for text color */
+.tile:hover h3 {
+    color: #ffffff;                    /* Change text color on hover */
+}
+
+/* Optional: Add a smooth transition on text color change */
+.tile h3 {
+    transition: color 0.3s ease;
+}
