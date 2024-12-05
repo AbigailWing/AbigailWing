@@ -103,7 +103,7 @@ a:hover {
 
 /* Tile text styles */
 .tile h3 {
-    font-size: 1rem; /* Ensure text scales properly */
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* Font scales with viewport */
     word-wrap: break-word; /* Break long text lines */
 }
 
@@ -138,3 +138,4 @@ a:hover {
         font-size: 0.8rem;
     }
 }
+
