@@ -172,19 +172,21 @@ img {
 .tile {
     position: relative;
     display: flex;
-    justify-content: center;           /* Horizontally centers the text inside the tile */
-    align-items: center;               /* Vertically centers the text inside the tile */
-    width: 250px;                      /* Tile width */
-    height: 180px;                     /* Tile height */
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 180px;
+    padding: 10px; /* Add padding */
     background-color: #007acc;
     color: white;
     text-align: center;
-    font-size: 16px;                   /* Default text size */
-    text-decoration: none;             /* Removes the underline from the link */
+    font-size: 16px;
+    text-decoration: none;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: all 0.3s ease;
+    box-sizing: border-box; /* Include padding in the tile dimensions */
 }
 
 .tile:hover {
@@ -274,3 +276,8 @@ img {
     main {
         font-size: 0.8rem;
     }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+}
