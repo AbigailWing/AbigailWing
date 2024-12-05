@@ -168,6 +168,12 @@ img {
     flex-wrap: nowrap;                 /* Prevent tiles from wrapping to the next row */
 }
 
+.tile h3 {
+    margin: 0; /* Remove default margin if needed */
+    padding: 10px; /* Add desired padding */
+    line-height: 1.4; /* Optional: Adjust line spacing */
+}
+
 /* Style for each tile */
 .tile {
     position: relative;
@@ -185,12 +191,6 @@ img {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: all 0.3s ease;
-}
-
-.tile h3 {
-    margin: 0; /* Remove default margin if needed */
-    padding: 10px; /* Add desired padding */
-    line-height: 1.4; /* Optional: Adjust line spacing */
 }
 
 .tile:hover {
